@@ -1,4 +1,4 @@
-/*class Solution {
+class Solution {
     public int[][] flipAndInvertImage(int[][] image) {
         int row=image.length;
         int col=image[0].length;
@@ -10,9 +10,9 @@
         }return reverse;
     }
 }
-*/
+
 //optimal
- 
+ /*
 class Solution {
     public int[][] flipAndInvertImage(int[][] A) {
         int C = A[0].length;
@@ -26,4 +26,5 @@ class Solution {
         return A;
     }
 }
+*/
 
