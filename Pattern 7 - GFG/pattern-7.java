@@ -22,37 +22,37 @@ class Solution {
 
     void printTriangle(int n) {
         // code here
-        for(int i=0;i<n;i++)
-        {
-            for(int j=0;j<(n-i-1);j++)
-            {
-                System.out.print(" ");
-            }
-             for(int k=0;k<(2*i+1);k++)
-            {
-                System.out.print("*");
-            }
-             for(int l=0;l<(n-i-1);l++)
-            {
-                System.out.print(" ");
-            }
-            System.out.println();
-        }
-        // for(int i=0;i<n;i++){
-        //     for(int j=0;j<n-i-1;j++){
-        //         //space
+        // for(int i=0;i<n;i++)
+        // {
+        //     for(int j=0;j<(n-i-1);j++)
+        //     {
         //         System.out.print(" ");
         //     }
-        //     for(int j=0;j<2*i+1;j++){
-        //         //star
+        //      for(int k=0;k<(2*i+1);k++)
+        //     {
         //         System.out.print("*");
         //     }
-        //     for(int j=0;j<n-i-1;j++){
-        //         //space
+        //      for(int l=0;l<(n-i-1);l++)
+        //     {
         //         System.out.print(" ");
         //     }
         //     System.out.println();
         // }
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n-i-1;j++){
+                //space
+                System.out.print(" ");
+            }
+            for(int j=0;j<2*i+1;j++){
+                //star
+                System.out.print("*");
+            }
+            for(int j=0;j<n-i-1;j++){
+                //space
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
     }
 }
  
