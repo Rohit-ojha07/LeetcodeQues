@@ -22,18 +22,21 @@ class GFG {
 class Solution {
     static String armstrongNumber(int n){
         // code here
-        int a=n;
-        double sum=0;
-        while(a!=0){
-            int temp=0;
-            temp=a%10;
-            sum=sum+Math.pow(temp,3);
-            a/=10;
+        int count=0;
+        int x=n;
+        int y=n;
+        while(n!=0){
+            n/=10;
+            count++;
         }
-        if(n==sum){
+        int sum=0;
+        while(x!=0){
+            sum+=Math.pow(x%10,count);
+            x/=10;
+        }
+        if(y==sum){
             return "Yes";
-        }else{
-            return "No";
         }
+        return "No";
     }
 }
