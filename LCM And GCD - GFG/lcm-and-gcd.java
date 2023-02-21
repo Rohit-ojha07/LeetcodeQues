@@ -27,15 +27,14 @@ class GFG {
 class Solution {
     static Long[] lcmAndGcd(Long A , Long B) {
         // code here
-        Long list[]=new Long[2];
-        long gcd=1;
-        long a=A;
-        long b=B;
-        // long lcm=0;
+        long gcd=0;
+        long c=A;
+        long d=B;
         while(A>0 && B>0){
             if(A>B){
                 A=A%B;
-            }else{
+            }
+            else{
                 B=B%A;
             }
         }
@@ -44,8 +43,10 @@ class Solution {
         }else{
             gcd=A;
         }
-        list[1]=gcd;
-        list[0]=(a*b/gcd);
-        return list;
+        long lcm=c*d/gcd;
+        Long ans[]=new Long[2];
+        ans[0]=lcm;
+        ans[1]=gcd;
+        return ans;
     }
-}
+};
