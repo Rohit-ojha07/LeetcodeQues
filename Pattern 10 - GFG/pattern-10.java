@@ -28,10 +28,7 @@ class Solution {
             }
             System.out.println();
         }
-        // for(int i=0;i<n;i++){
-        //     System.out.print("* ");
-        // }
-        // System.out.println();
+        
         for(int i=0;i<n-1;i++){
             for(int j=n-1;j>i;j--){
                 System.out.print("* ");
