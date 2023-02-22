@@ -22,16 +22,14 @@ class Solution {
 
     void printTriangle(int n) {
         // code here
-        int num=1;
+        int a=0,b=1;
         for(int i=0;i<n;i++){
-            if(i%2==0){
-              num=1;
-            }else{
-                num=0;
-            }
             for(int j=0;j<=i;j++){
-                System.out.print(num+" ");
-                num=1-num;
+                if((i+j)%2==0){
+                    System.out.print(b+" ");
+                }else{
+                    System.out.print(a+" ");
+                }
             }
             System.out.println();
         }
