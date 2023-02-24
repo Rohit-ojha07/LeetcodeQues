@@ -22,8 +22,9 @@ class Solution {
 
     void printTriangle(int n) {
         // code here
+        char c;
         for(int i=1;i<=n;i++){
-            char c='A';
+            c='A';
             for(int j=n;j>=i;j--){
                 System.out.print(c);
                 c++;
