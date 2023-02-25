@@ -22,15 +22,13 @@ class Solution {
 
     void printTriangle(int n) {
         // code here
-        int e=65;
-        int f=e+n-1;
-        char g;
-        // System.out.println(g);
-        for(int i=1;i<=n;i++){
-            g=(char)f;
-            for(int j=1;j<=i;j++){
-                System.out.print(g+" ");
-                g--;
+        char d=(char)(65+n-1);
+        char c;
+        for(int i=0;i<n;i++){
+            c=d;
+            for(int j=0;j<=i;j++){
+                System.out.print(c+" ");
+                c--;
             }
             System.out.println();
         }
