@@ -27,7 +27,7 @@ class Solution {
             for(int j=0;j<=i;j++){
                 System.out.print("*");
             }
-            for(int j=space;j>0;j--){
+            for(int j=0;j<space;j++){
                 System.out.print(" ");
             }
             space-=2;
@@ -36,15 +36,14 @@ class Solution {
             }
             System.out.println();
         }
-        int space2=2;
+        int sp=2;
         for(int i=0;i<n-1;i++){
             for(int j=n-1;j>i;j--){
                 System.out.print("*");
             }
-            for(int j=1;j<=space2;j++){
+            for(int j=0;j<sp;j++){
                 System.out.print(" ");
-            }
-            space2+=2;
+            }sp+=2;
             for(int j=n-1;j>i;j--){
                 System.out.print("*");
             }
@@ -52,3 +51,13 @@ class Solution {
         }
     }
 }
+/*
+1-1 8 1
+2-2 6 2
+3-3 4 3
+4-4 2 4
+5-5 0 5
+
+2
+
+*/
