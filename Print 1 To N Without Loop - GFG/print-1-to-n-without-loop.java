@@ -46,10 +46,10 @@ class Solution
   public void printNos(int N)
     {
         //Your code here
-        int t=1;
-        while(t!=N+1){
-            System.out.print(t+" ");
-            t++;
+        if(N!=0){
+            N--;
+            printNos(N);
+            System.out.print(N+1+" ");
         }
     }
 }
