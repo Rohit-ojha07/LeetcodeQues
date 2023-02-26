@@ -21,12 +21,12 @@ class Main {
 
 class Solution {
 
-    void printNos(int n) {
+    void printNos(int N) {
         // code here
-        if(n<1){
-            return;
+        if(N!=0){
+            System.out.print(N+" ");
+            N--;
+            printNos(N);
         }
-        System.out.print(n+" ");
-        printNos(n-1);
     }
 }
