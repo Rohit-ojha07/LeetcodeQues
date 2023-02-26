@@ -42,16 +42,22 @@ class Solution
     public static long[] printFibb(int n) 
     {
         //Your code here
-        long arr[]=new long[n];
-        long a = 0;
-        long b = 1;
-        arr[0]=1;
-        for(int i=1; i<n; i++){
-            long c=a+b;
-            arr[i]=c;
-            a=b;
-            b=c;
+        int fact=1;
+        long ans[]=new long[n];
+        if(n==1){
+            ans[0]=fact;
+            return ans;
         }
-        return arr;
+        // fact=1;
+        ans[0]=fact;
+        ans[1]=fact;
+        if(n==2){
+            return ans;
+        }
+        for(int i=1;i+1<n;i++){
+            // ans[i+1]=(long)(ans[i-1]+ans[i]);
+            ans[i+1]=(ans[i-1]+ans[i]);
+        }
+        return ans;
     }
 }
