@@ -26,20 +26,18 @@ class Solution {
     int isPalindrome(String S) {
         // code here
         char s[]=S.toCharArray();
-        int i=0,count=0;
-        int n=s.length;
-        while(i<=n/2){
-            if(s[i]==s[n-i-1]){
+        int i=0;
+        int j=s.length-1;
+        int ans=1;
+        while(i<=j){
+            if(s[i]==s[j]){
                 i++;
-                count++;
+                j--;
             }else{
-                return 0;
-                
+                ans=0;
+                return ans;
             }
         }
-        if(count>0){
-            return 1;
-        }
-        return 0;
+        return ans;
     }
-}
+};
