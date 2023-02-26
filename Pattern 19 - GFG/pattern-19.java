@@ -22,6 +22,7 @@ class Solution {
 
     void printTriangle(int n) {
         // code here
+        int space=2*(n-1);
         for(int i=0;i<n;i++){
             for(int j=n;j>i;j--){
                 System.out.print("*");
@@ -34,7 +35,6 @@ class Solution {
             }
             System.out.println();
         }
-        int space=2*(n-1);
         for(int i=0;i<n;i++){
             for(int j=0;j<=i;j++){
                 System.out.print("*");
@@ -48,5 +48,13 @@ class Solution {
             }
             System.out.println();
         }
+        
     }
 }
+/*
+1st - 1 8 1
+2nd-  2 6 2
+3rd-  3 4 3
+4th-  4 2 4
+5th-  5 0 5
+*/
