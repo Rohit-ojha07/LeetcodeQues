@@ -21,15 +21,12 @@ class Main {
 
 class Solution {
 
-    void printGfg(int n) {
+    void printGfg(int N) {
         // code here
-        if(n>=1){
+        if(N>0){
+            N--;
+            printGfg(N);
             System.out.print("GFG"+" ");
-            printGfg(n-1);
         }
-        else{
-            return;
-        }
-        
     }
 }
