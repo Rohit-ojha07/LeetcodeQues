@@ -32,15 +32,20 @@ import java.io.*;
 class Solution {
     boolean arraySortedOrNot(int[] arr, int n) {
         // code here
-        int i=0;
-        while(i+1<n){
+        boolean sort=false;
+        int count=0;
+        for(int i=0;i+1<n;i++){
             if(arr[i]<=arr[i+1]){
-                i++;
+                count++;
             }else{
-                return false;
+                count=0;
+                break;
             }
-            
         }
-        return true;
+        if(count==n-1){
+            sort=true;
+            return sort;
+        }
+        return sort;
     }
 }
