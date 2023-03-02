@@ -37,18 +37,13 @@ class gfg
 
 
 class Solution{
-    static int searchInSorted(int arr[], int n, int k)
+    static int searchInSorted(int arr[], int N, int K)
     {
+        
         // Your code here
-        int i=0,j=n-1;
-        while(i<=j){
-            int mid=(i+j)/2;
-            if(arr[mid]==k){
+        for(int i=0;i<N;i++){
+            if(arr[i]==K){
                 return 1;
-            }else if(k>arr[mid]){
-                i=mid+1;
-            }else{
-                j=mid-1;
             }
         }
         return -1;
