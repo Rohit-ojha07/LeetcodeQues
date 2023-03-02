@@ -55,19 +55,6 @@ class Solution
     public static ArrayList<Integer> findUnion(int arr1[], int arr2[], int n, int m)
     {
         // add your code here
-        // for(int i=0;i<n;i++)
-        // ans.add(arr1[i]);
-        // for(int i=0;i<m;i++)
-        // ans.add(arr2[i]);
-        
-        // for(int i=0;i<ans.size();i++){
-        //     for(int j=1;j<ans.size();j++){
-        //     if(ans.get(i)==ans.get(j)){
-        //         ans.remove(ans.get(j));
-        //     }
-
-        //     }
-        // }
         HashSet<Integer> ans = new HashSet<>();
          for(int i=0;i<n;i++)
          ans.add(arr1[i]);
