@@ -12,24 +12,8 @@ class Solution
 {
     public static void sort012(int a[], int n)
     {
-        // code here
-        // int min=Integer.MAX_VALUE;;
-        // int temp=0;
-        // for(int i=0;i+1<n;i++){
-        //     if(a[i+1]<a[i]){
-        //         temp=a[i];
-        //         a[i+1]=a[i];
-        //         a[i]=temp;
-        //     }
-        // }
-        // for(int i=0;i<n;i++){
-        //     System.out.print("--");
-        //     System.out.print(a[i]+" ");
-        // }
+        // code here 
         Arrays.sort(a);
-        // for(int i=0;i<n;i++){
-        //     System.out.print(a[i]+" ");
-        // }
     }
 }
 
