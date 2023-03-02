@@ -45,8 +45,6 @@ class Solution {
             }
             if(arr[i]<max){
                 ans=arr[i];
-            }else if(arr[i]==max){
-                break;
             }
         }
         return ans;
