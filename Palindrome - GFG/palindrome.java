@@ -31,17 +31,16 @@ class Solution
     public String is_palindrome(int n)
     {
         // Code here
-        int x=n;
-        int num=0;
-        // while(n!=0){
-            while(n!=0){
-            int t=n%10;
-            num=num*10+t;
-            n/=10;
-            }
-            if(x==num){
-                return "Yes";
-            }
-         return "No";
+        int temp=0;
+        int m=n;
+        while(n>0){
+            int rem=n%10;
+            temp=temp*10+rem;
+            n=n/10;
+        }
+        if(m==temp){
+            return "Yes";
+        }
+        return "No";
     }
 }
