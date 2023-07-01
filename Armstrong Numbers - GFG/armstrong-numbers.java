@@ -22,19 +22,14 @@ class GFG {
 class Solution {
     static String armstrongNumber(int n){
         // code here
-        int count=0;
-        int x=n;
-        int y=n;
-        while(n!=0){
-            n/=10;
-            count++;
-        }
+        int m=n;
         int sum=0;
-        while(x!=0){
-            sum+=Math.pow(x%10,count);
-            x/=10;
+        while(n>0){
+            int temp=n%10;
+            sum=temp*temp*temp+sum;
+            n=n/10;
         }
-        if(y==sum){
+        if(sum==m){
             return "Yes";
         }
         return "No";
